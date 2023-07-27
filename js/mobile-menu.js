@@ -1,12 +1,15 @@
 (() => {
-  const burgerIcon = document.querySelector(".icon-burger");
-  const menuBody = document.querySelector(".toggle-container");
-  const closeMenuBtn = document.querySelector(".toggle-close-btn");
+  const refs = {
+    openMenuBtn: document.querySelector("[data-menu-open]"),
+    closeMenuBtn: document.querySelector("[data-menu-close]"),
+    menu: document.querySelector("[data-menu]"),
+  };
 
-  burgerIcon.addEventListener("click", function () {
-    menuBody.classList.toggle("active");
-  });
-  closeMenuBtn.addEventListener("click", function () {
-    menuBody.classList.toggle("active");
-  });
+  refs.openMenuBtn.addEventListener("click", toggleMenu);
+  refs.closeMenuBtn.addEventListener("click", toggleMenu);
+
+  function toggleMenu() {
+    refs.menu.classList.toggle("is-hidden");
+    document.body.classList.toggle("no-scroll");
+  }
 })();
