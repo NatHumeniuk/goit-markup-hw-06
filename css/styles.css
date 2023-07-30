@@ -823,16 +823,12 @@ img {
 }
 .filters-list {
   row-gap: 16px;
+  column-gap: 24px;
   justify-content: left;
   flex-wrap: wrap;
   margin-bottom: 48px;
 }
-.filter-item-btn {
-  margin-right: 24px;
-}
-.filter-break {
-  margin-right: 0;
-}
+
 .filter-btn {
   font-family: var(--primary-font);
   color: var(--primary-brand-color);
@@ -1124,7 +1120,6 @@ img {
     padding: 72px 24px 24px 24px;
   }
   .filters-list {
-    column-gap: 24px;
     row-gap: 0;
     justify-content: center;
     margin-bottom: 64px;
@@ -1135,9 +1130,7 @@ img {
   .filter-item-btn {
     margin-right: 0;
   }
-  .filter-break {
-    display: none;
-  }
+
   .examples {
     padding-top: 64px;
     padding-bottom: 96px;
